@@ -16,6 +16,16 @@ app.UseEndpoints(endpoints =>
     );
 });
 ```
+> código especifico para uso de rotas com `Areas`
+
+```
+endpoints.MapAreaControllerRoute(
+        name: "AreaVendas",
+        areaName: "Vendas",
+        pattern: "Vendas/{controller=Pedidos}/{action=Index}/{id?}"
+    );
+```
+
 > Exemplos de links para o menu utlizando área e sem área
 
 ```
