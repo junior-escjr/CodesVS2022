@@ -1,6 +1,6 @@
-# CodesVS2022
+# Codes Visual Studio 2022 - .Net Core 6
 
-> Código para rotas no `VS 2022`.
+> Código para rotas. Adicionar esse código no arquivo `Program.cs`.
 ```
 app.UseEndpoints(endpoints =>
 {
@@ -42,4 +42,10 @@ app.UseEndpoints(endpoints =>
     ]
   }
 ]
+```
+
+> Código para funcionar arquivos estáticos `(.css, .js)`.
+
+```
+app.UseStaticFiles();
 ```
