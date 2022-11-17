@@ -1,5 +1,6 @@
 # Codes Visual Studio 2022 - .Net Core 6
 
+## Rotas
 > Código para rotas. Adicionar esse código no arquivo `Program.cs`.
 ```
 app.UseEndpoints(endpoints =>
@@ -26,6 +27,7 @@ endpoints.MapAreaControllerRoute(
     );
 ```
 
+## Links
 > Exemplos de links para o menu utlizando área e sem área
 
 ```
@@ -33,6 +35,7 @@ endpoints.MapAreaControllerRoute(
 <a class="nav-link" asp-area="Produtos" asp-controller="Cadastro" asp-action="Index">Cadastro</a>
 ```
 
+## Arquivos
 > BundleConfig - exemplo de código para utilizar o bundleconfig para automatizar a minificação dos arquivos .css e .js. Para funcionar no `VS 2022` tem que instalar uma extensão chamada `Bundler e Minifier 2022+`. Sem essa extensão a `Task Runner Explorer` não reconhece o arquivo bundleconfig.json.
 ```
 [
@@ -60,6 +63,7 @@ endpoints.MapAreaControllerRoute(
 app.UseStaticFiles();
 ```
 
+## Outros
 > Altera a nomenclatura da pasta `Área` para `Modulos`. Adicionar esse código no arquivo `Program.cs` abaixo da variável `builder`. Não esquecer de alterar o namespace do controller para o nome novo.
 
 ```
