@@ -49,3 +49,15 @@ app.UseEndpoints(endpoints =>
 ```
 app.UseStaticFiles();
 ```
+
+> Altera a nomenclatura da pasta `Área` para `Modulos`. Adicionar esse código no arquivo `Program.cs` abaixo da variável `builder`. Não esquecer de alterar o namespace do controller para o nome novo.
+
+```
+builder.Services.Configure<RazorViewEngineOptions>(options =>
+{
+    options.AreaViewLocationFormats.Clear();
+    options.AreaViewLocationFormats.Add("/Modulos/{2}/Views/{1}/{0}.cshtml");
+    options.AreaViewLocationFormats.Add("/Modulos/{2}/Views/Shared/{0}.cshtml");
+    options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
+});
+```
