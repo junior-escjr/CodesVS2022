@@ -69,6 +69,21 @@ app.UseStaticFiles();
 UseSqlServer
 ```
 
+> Código da `ConnectionStrings`
+```
+"AllowedHosts": "*",
+  "ConnectionStrings": {
+    "MeuDbContext": "Server=(localdb)\\MSSQLLocalDB;Database=NomeDoBancoDeDados;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+```
+
+> Instância de conexão local
+
+```
+Server=(localdb)\\MSSQLLocalDB;
+```
+
+
 ## Migrations
 > Para funcionar o código abaixo tem que instalar através do `Manage NuGet` o pacote do `Microsoft.EntityFrameworkCore.Tools` compatível com a versão atual do software utilizado
 ```
