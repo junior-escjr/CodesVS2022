@@ -63,6 +63,12 @@ endpoints.MapAreaControllerRoute(
 app.UseStaticFiles();
 ```
 
+## Connection Strings
+> Para funcionar o código abaixo tem que instalar através do `Manage NuGet` o pacote do `Microsoft.EntityFrameworkCore.SqlServer` compatível com a versão atual do software utilizado
+```
+UseSqlServer
+```
+
 ## Outros
 > Altera a nomenclatura da pasta `Área` para `Modulos`. Adicionar esse código no arquivo `Program.cs` abaixo da variável `builder`. Não esquecer de alterar o namespace do controller para o nome novo.
 
