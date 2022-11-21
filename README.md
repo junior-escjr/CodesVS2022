@@ -77,6 +77,17 @@ UseSqlServer
   }
 ```
 
+> Duas formas de conectar com a database. Adicionar ambos os códigos no arquivo `Program.cs`.
+```
+string connString = builder.Configuration.GetConnectionString("MeuDbContext");
+```
+ou
+```
+builder.Services.AddDbContext<MeuDbContext> (options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MeuDbContext"));
+});
+```
+
 > Instância de conexão local
 
 ```
