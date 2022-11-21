@@ -73,7 +73,7 @@ UseSqlServer
 ```
 "AllowedHosts": "*",
   "ConnectionStrings": {
-    "MeuDbContext": "Server=(localdb)\\MSSQLLocalDB;Database=NomeDoBancoDeDados;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "MeuDbContext": "Server=(localdb)\\mssqllocaldb;Database=MeuBancoDoCursoAspNet;Trusted_Connection=True;MultipleActiveResultSets=True"
   }
 ```
 
