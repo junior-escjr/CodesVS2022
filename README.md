@@ -101,6 +101,12 @@ Server=(localdb)\\MSSQLLocalDB;
 add-migration "Inicial" -Verbose
 ```
 
+## Identity Framework
+> Adicionar o código abaixo no arquivo `Program.cs` para que as páginas sejam exibidas
+```
+app.MapRazorPages();
+```
+
 ## Outros
 > Altera a nomenclatura da pasta `Área` para `Modulos`. Adicionar esse código no arquivo `Program.cs` abaixo da variável `builder`. Não esquecer de alterar o namespace do controller para o nome novo.
 
