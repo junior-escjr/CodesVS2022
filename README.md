@@ -119,3 +119,11 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
 });
 ```
+> IHostingEnvironment
+```
+var hostEnviroment = builder.Build().Environment;
+
+builder.Configuration.SetBasePath(hostEnviroment.ContentRootPath)
+                     .AddJsonFile("appsettings.json", true, true)
+                     .AddJsonFile($"appsettings.{hostEnviroment.EnvironmentName}.json", true, true);
+```
